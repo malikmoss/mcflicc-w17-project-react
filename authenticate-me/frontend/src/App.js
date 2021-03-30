@@ -23,15 +23,15 @@ function App() {
           <Route exact path="/">
             <LandingPage />
           </Route>
-          <Route path="/signup">
+          <Route exact path="/signup">
             <SignupFormPage />
           </Route>
           <Route exact path="/login">
             <LoginFormPage />
           </Route>
-          {/* <Route path="/explore"> */}
-            {/* <ExplorePage /> */}
-          {/* </Route> */}
+          <Route exact path="/explore">
+            <ExplorePage />
+          </Route>
         </Switch>
       )}
     </>

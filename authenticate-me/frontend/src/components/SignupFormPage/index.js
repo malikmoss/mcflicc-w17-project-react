@@ -32,7 +32,7 @@ function SignupFormPage() {
     <div className="signup-page">
     <div className="signup-container">
       <div className="header-container">
-        <h1>Log In</h1>
+        <h1>Create Account</h1>
       </div>
 
     <form onSubmit={handleSubmit}>
@@ -88,7 +88,7 @@ function SignupFormPage() {
         </div>
         </div>
 
-      <button type="submit">Sign Up</button>
+      <button type="submit">Submit</button>
     </form>
     </div>
     </div>

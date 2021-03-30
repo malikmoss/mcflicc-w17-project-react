@@ -1,30 +1,34 @@
-// import React, { useState, useEffect } from "react";
-// import './ExplorePage.css'
-// import {useSelector, useDispatch} from 'react-redux'
-// import {getPhotos} from "../../store/photo";
-// import {Redirect, useHistory} from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import './ExplorePage.css'
+import {useSelector, useDispatch} from 'react-redux'
+import {getPhotos, getPhoto} from "../../store/photo";
+import {Redirect, useHistory} from 'react-router-dom';
 
-// function ExplorePage() {
-//     const dispatch = useDispatch()
-//     const user = useSelector(state => state.session.user)
-//     const photos = useSelector(state => state.photos)
-//     useEffect(()=>{
-//         dispatch(getPhotos(user))
-//     }, [])
+function ExplorePage() {
+    const dispatch = useDispatch()
+    // const user = useSelector(state => state.session.user)
+    // const photos = useSelector(state => state.photos ? Object.values(state.photos) : null)
+    // useEffect(()=>{
+    //     if(user) {dispatch(getPhotos(user.id))}
+    // }, [dispatch, user])
 
-//     // const elements = photos.map((el, i) => {
-//     //     return <Photos obj={el} key={i}/>
-//     // })
+    // useEffect(()=>{
+    //     dispatch(getPhoto())
+    // },[dispatch])
 
-//     const history = useHistory();
-//     const sessionUser = useSelector((state) => state.session.user);
 
-//        return ( 
-//     <div className="explore-container">
-//      {/* <h1 className="landing">LandingPage</h1> */}
-//      {/* {elements} */}
-//      </div>
-//     )
-// }
+    const history = useHistory();
+    // console.log(photos)
+    //  if (!photos) return null;
 
-// export default ExplorePage;
+     return ( 
+    <div className="explore-container">
+     {/* {photos.map(photo => */}
+        {/* //  <img src={photo.photoURL} />)} */}
+     <img src='https://thezebra.org/wp-content/uploads/2020/07/Training-Time-Aug2020-GR-with-ball-scaled.jpg' />
+     </div>
+     )
+
+}
+
+export default ExplorePage;

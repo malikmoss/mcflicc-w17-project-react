@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useDispatch } from 'react-redux';
 import {createPhoto} from "../../store/photo";
 import {useSelector} from "react-redux";
+import {useHistory} from 'react-router-dom'
 
 const FileUpload = ({setShowModal}) => {
     const user = useSelector((state) => state.session.user)
     const dispatch = useDispatch()
+    const history = useHistory()
     const [image, setImage] = useState(null)
     console.log(createPhoto, "!!!")
 
@@ -13,6 +15,7 @@ const FileUpload = ({setShowModal}) => {
         e.preventDefault();
         dispatch(createPhoto(user.id, image))
         setShowModal(false)
+        history.push('/explore')
     }
 
     const updateFile = (e) => {

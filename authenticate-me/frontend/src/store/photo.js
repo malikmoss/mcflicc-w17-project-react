@@ -5,12 +5,12 @@ const GET_PHOTOS = 'GET_PHOTOS'
 
 const setPhoto = (photo) => ({
     type: UPLOAD_PHOTO,
-    payload: photo
+    photo
 });
 
 const setPhotos = (photos) => ({
     type: GET_PHOTOS,
-    payload: photos
+    photos
 });
 
 export const createPhoto = (authorId, image) => async(dispatch) => {
@@ -24,22 +24,34 @@ export const createPhoto = (authorId, image) => async(dispatch) => {
         body: formData
     })
     const data = await res.json();
+    console.log('DATA!', data)
     dispatch(setPhoto(data))
-};
+}
 
-export const getPhotos = (authorId) => async(dispatch) => {
+export const getPhotos = ({authorId}) => async(dispatch) => {
+    console.log(authorId)
     const res = await csrfFetch(`/api/explore/${authorId}`)
     const data = await res.json();
     dispatch(setPhotos(data))
 }
 
+export const getPhoto = () => async(dispatch) => {
+    const res = await csrfFetch(`/api/explore`)
+    const data = await res.json();
+    console.log('Data!!!', data)
+    dispatch(setPhotos(data))
+}
 
-export default function reducer(state=[], action){
+export default function reducer(state=null, action){
     switch (action.type) {
         case UPLOAD_PHOTO:
-            return [...state, action.payload]
+            return {...state, [action.photo.id]:action.photo}
         case GET_PHOTOS:
-            return [...state, ...action.payload]
+            let nextState = {...state}
+            action.photos.forEach(photo => {
+                nextState[photo.id] = photo
+            })
+            return nextState
         default :
           return state
     }
