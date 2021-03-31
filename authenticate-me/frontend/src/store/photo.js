@@ -24,7 +24,7 @@ export const createPhoto = (authorId, image) => async(dispatch) => {
         body: formData
     })
     const data = await res.json();
-    console.log('DATA!', data)
+    // console.log('DATA!', data)
     dispatch(setPhoto(data))
 }
 

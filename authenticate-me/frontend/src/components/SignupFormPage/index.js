@@ -65,7 +65,7 @@ function SignupFormPage() {
         </div>
       
       <div className="password-container">
-      <label calssName='password-label'>Password:</label>
+      <label className='password-label'>Password:</label>
       <div>
         <input
           type="password"

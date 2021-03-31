@@ -17,7 +17,6 @@ function LandingPage() {
     // })
        return ( 
            <div>
-               Landing Page
            </div>
     // <div className="landing-container">
     //  {/* <h1 className="landing">LandingPage</h1> */}
