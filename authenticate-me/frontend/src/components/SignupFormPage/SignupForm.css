@@ -17,6 +17,7 @@
     display: inline-block;
     margin: 50px 50px 50px 50px;
     position: relative;
+    margin-top: 15vh;
     margin-bottom: 400px;
 }
 
@@ -28,7 +29,7 @@
 }
 
 .email-container {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .email-label {
@@ -37,7 +38,7 @@
 }
 
 .username-container {
-    margin-top: 80px;
+    margin-top: 10px;
 }
 
 .username-label {

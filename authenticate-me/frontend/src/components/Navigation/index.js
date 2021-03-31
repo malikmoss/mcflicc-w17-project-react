@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import ProfileButton from './ProfileButton';
-import LoginFormPage from '../LoginFormModal';
 import UploadFormModal from './UploadModal';
 import './Navigation.css';
 
