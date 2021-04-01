@@ -38,7 +38,7 @@ export const getPhotos = ({authorId}) => async(dispatch) => {
 export const getPhoto = () => async(dispatch) => {
     const res = await csrfFetch(`/api/explore`)
     const data = await res.json();
-    console.log('Data!!!', data)
+    // console.log('Data!!!', data)
     dispatch(setPhotos(data))
 }
 

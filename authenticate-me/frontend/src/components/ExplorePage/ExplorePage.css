@@ -8,3 +8,14 @@
     margin-top: -99px;
     z-index: 0; */
 /* } */
+
+.photos-main {
+    margin-left: 147px;
+    margin-right: 147px;
+    padding-bottom: 80px;
+}
+
+.explore-container {
+    display: flex;
+    flex-wrap: wrap;
+}

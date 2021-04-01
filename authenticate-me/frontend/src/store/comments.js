@@ -6,23 +6,37 @@ const DELETE_COMMENT = 'DELETE_COMMENT'
 
 const getComment = comment => ({
     type: GET_COMMENT,
-    comment: comment
+    payload: comment
 });
 
 const receiveAllComments = comments => ({
     type: RECEIVE_ALL_COMMENTS, 
-    comments: comments
+    payload: comments
 });
 
 const deleteComment = (comment) => ({
     type: DELETE_COMMENT,
-    commentId: comment.id
+    payload: comment.id
 });
+
+export const createComment = (authorId, body) => async(dispatch) => {
+    const formData = new FormData()
+    formData.append("authorId", authorId)
+    formData.append("body", body)
+
+    const res = await csrfFetch('/api/explore/photo', {
+        method: "POST",
+        headers: {"Content-Type": "multipart/form-data"},
+        body: formData
+    })
+    const data = await res.json();
+    dispatch(getComment(data))
+}
 
 
 
 export default function commentReducer (state = {}, action){
-    Object.freeze(oldState);
+    Object.freeze(state);
     let newState;
 
     switch (action.type) {
