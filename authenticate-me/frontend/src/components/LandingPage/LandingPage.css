@@ -1,8 +1,8 @@
 /* body {
     background: url('../../images/background.JPEG') center fixed;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
+    background-size: contain;
+    height: 75%;
+    width: 75%;
     overflow: hidden;
     position: fixed;
     margin-top: -99px;

@@ -1,0 +1,11 @@
+{
+    "bathroom": {
+        "1": {
+            "photoId": 1,
+            "authorId": 1,
+            "body" : "test",
+            "createdAt": 2021,
+            "updateAt": 2021
+        }
+    }
+}
