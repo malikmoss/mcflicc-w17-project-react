@@ -16,7 +16,14 @@ function LandingPage() {
     //     return <photos obj={el} key={i}/>
     // })
        return ( 
-           <div>
+           <div className="homepage">
+               <div className="homepage-text">
+                    <h1 className="hometext-h1">Find your McDonald's.</h1>
+                    <h3 className="hometext-h3">
+                        Join the McFlicc community, home to tens of 
+                        billions of photos of McDonald's around the world.
+                    </h3>
+                </div>
            </div>
     // <div className="landing-container">
     //  {/* <h1 className="landing">LandingPage</h1> */}

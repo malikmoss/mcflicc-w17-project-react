@@ -1,7 +1,15 @@
 .navbar {
+    /* position: relative;
+    display: flex;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    height: 59px;
+    justify-content: space-between;
+    padding: 0 24px;
+    margin: 0px;
+    z-index: 2 */
+
     background: #000000;
-    opacity: 0.9;
-  
     border-bottom: 1px solid#faf4d3;
     display: inline-block;
     padding: 5px 5px 5px 5px;
@@ -9,8 +17,8 @@
     align-items: center;
     font-size: 16px;
     position: fixed;
-    z-index: 10;
     top: 0;
+    z-index: 10;
     width: 100%;
   }
   
@@ -21,11 +29,20 @@
   }
   
   .navbar a {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif;
     color: #ffffff;
     background: #000000;
     padding: 5px;
-    border-radius: 4px;
+    border-radius: 4px; */
+    position: relative;
+    display: flex;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    height: 59px;
+    justify-content: space-between;
+    padding: 0 24px;
+    margin: 0px;
+    z-index: 2
   }
 
   .upload-box{
@@ -46,17 +63,6 @@
     text-align: left;
   }
 
-  .navbar {
-    background: #000000;
-    opacity: 0.9;
-    border-bottom: 1px solid#faf4d3;
-    display: flex;
-    padding: 10px 10px 10px 10px;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    width: 100%;
-  }
   
   .navbar a:hover {
     color: #000000;
@@ -64,7 +70,7 @@
     background: #ffffff;
     margin: 2px;
   }
-  
+/*   
   .navbar a {
     font-family: Arial, sans-serif;
     color: #ffffff;
@@ -72,23 +78,34 @@
     padding: 5px;
     border-radius: 4px;
     border: 1px;
-  }
+  } */
   ul > li {
     display: inline-block;
     padding: 3px 15px 3px 15px;
     background: black;
     color: white;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 30px;
   }
   
   .navbar > li {
-    display: inline-block;
+    /* display: inline-block;
   
     padding: 3px 15px 3px 15px;
     background: rgb(0, 0, 0);
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; */
+
+    /*this style  currently*/
+    position: relative;
+    display: flex;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    height: 59px;
+    justify-content: space-between;
+    padding: 0 24px;
+    margin: 0px;
+    z-index: 2
   }
   
 
@@ -108,15 +125,16 @@
     background: #ffffff;
   }
   
-  span {
+  /* span {
     background: black;
-  }
-  h3 {
+  } */
+
+  /* h3 {
     display: inline-block;
     padding: 3px 15px 3px 15px;
     background: black;
     color: white;
     font-weight: bold;
     font-size: 16px;
-  }
+  } */
   

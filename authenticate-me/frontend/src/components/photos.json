@@ -1,0 +1,74 @@
+{
+    "photo": {
+        "1": {
+            "id": "1",
+            "photoURL": "https://mcflicc-photos.s3.amazonaws.com/1617317300090.JPEG",
+            "authorId": 1,
+            "createdAt": 2021,
+            "updatedAt": 2021
+        },
+        "2": {
+            "id": "2",
+            "photoURL": "https://mcflicc-photos.s3.amazonaws.com/1617317395623.JPEG",
+            "authorId": 2,
+            "createdAt": 2021,
+            "updatedAt": 2021
+        },
+        "3": {
+            "id": "3",
+            "photoURL": "https://mcflicc-photos.s3.amazonaws.com/1617317412175.png",
+            "authorId": 1,
+            "createdAt": 2021,
+            "updatedAt": 2021
+        },
+        "4": {
+            "id": "4",
+            "photoURL": "https://mcflicc-photos.s3.amazonaws.com/1617317433046.PNG",
+            "authorId": 1,
+            "createdAt": 2021,
+            "updatedAt": 2021
+        },
+        "5": {
+            "id": "5",
+            "photoURL": "https://mcflicc-photos.s3.amazonaws.com/1617317452453.JPEG",
+            "authorId": 3,
+            "createdAt": 2021,
+            "updatedAt": 2021
+        },
+        "6": {
+            "id": "6",
+            "photoURL": "https://mcflicc-photos.s3.amazonaws.com/1617317475787.JPEG",
+            "authorId": 3,
+            "createdAt": 2021,
+            "updatedAt": 2021
+        },
+        "7": {
+            "id": "7",
+            "photoURL": "https://mcflicc-photos.s3.amazonaws.com/1617317492752.JPEG",
+            "authorId": 2,
+            "createdAt": 2021,
+            "updatedAt": 2021
+        },
+        "8": {
+            "id": "8",
+            "photoURL": "https://mcflicc-photos.s3.amazonaws.com/1617378657882.JPEG",
+            "authorId": 1,
+            "createdAt": 2021,
+            "updatedAt": 2021
+        },
+        "9": {
+            "id": "9",
+            "photoURL": "https://mcflicc-photos.s3.amazonaws.com/1617378696459.png",
+            "authorId": 2,
+            "createdAt": 2021,
+            "updatedAt": 2021
+        },
+        "10": {
+            "id": "10",
+            "photoURL": "https://mcflicc-photos.s3.amazonaws.com/1617378723480.png",
+            "authorId": 1,
+            "createdAt": 2021,
+            "updatedAt": 2021
+        }
+    }
+}

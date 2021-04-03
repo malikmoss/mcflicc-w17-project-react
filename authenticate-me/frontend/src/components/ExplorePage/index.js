@@ -23,13 +23,12 @@ function ExplorePage() {
 
      return ( 
       <div className="photos-main">
-          <div>Mxplore</div>
       <div className="explore-container">
        {photos.map(photo =>
             <img src={photo.photoURL} />
             /* <img src='https://thezebra.org/wp-content/uploads/2020/07/Training-Time-Aug2020-GR-with-ball-scaled.jpg' /> */
-            )
-           }
+            
+            )}
       </div>
       </div>
    )
