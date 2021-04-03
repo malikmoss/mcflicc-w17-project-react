@@ -73,3 +73,29 @@ button {
     color: white;
     font-size: 18px;
 }
+
+.login-button {
+    margin: 10px;
+    height: 40px;
+    width: 275px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #128fdc;
+    color: white;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-bottom: 4px
+}
+
+.demo-user {
+    margin: 10px;
+    height: 40px;
+    width: 275px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #128fdc;
+    color: white;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-bottom: 4px
+}
