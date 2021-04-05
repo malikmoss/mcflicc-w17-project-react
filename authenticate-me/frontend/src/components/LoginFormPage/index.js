@@ -28,9 +28,11 @@ function LoginFormPage() {
 
     return (
       <div className="login-page">
+        {sessionUser}
+
         <div className="login-container">
           <div className="header-container">
-            <h1>Log In</h1>
+            Log In
           </div>
 
         <form onSubmit={handleSubmit}>
@@ -39,24 +41,26 @@ function LoginFormPage() {
             </ul>
 
             <div className="email-container">
-            <label className="email-label">Username or Email</label>
+            {/* <label className="email-label">Username or Email</label> */}
               <div>
-              <input
+              <input className='user-input'
                 type="text"
                 value={credential}
                 onChange={(e) => setCredential(e.target.value)}
+                placeholder="Username/E-mail"
                 required
               /> 
             </div>
             </div>
 
             <div className='password-container'>
-            <label className='password-label'>Password</label>
+            {/* <label className='password-label'>Password</label> */}
                 <div>
-              <input
+              <input className= 'password-input'
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                placeholder= "Password"
                 required
                 />
             </div>
@@ -71,3 +75,4 @@ function LoginFormPage() {
 }
 
 export default LoginFormPage;
+

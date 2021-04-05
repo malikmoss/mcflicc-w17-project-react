@@ -7,6 +7,8 @@ import Navigation from "./components/Navigation";
 import LoginFormPage from "./components/LoginFormPage"
 import LandingPage from "./components/LandingPage/index"
 import ExplorePage from "./components/ExplorePage"
+import footer from "./components/Navigation/footer.css"
+import main from "./components/Navigation/main.css"
 
 function App() {
   const dispatch = useDispatch();
@@ -16,7 +18,7 @@ function App() {
   }, [dispatch]);
 
   return (
-    <>
+    <div className="main">
       <Navigation isLoaded={isLoaded} />
       {isLoaded && (
         <Switch>
@@ -34,7 +36,21 @@ function App() {
           </Route>
         </Switch>
       )}
-    </>
+
+        <footer className="footer-master">
+            <a  href="https://github.com/malikmoss">
+                Github
+            </a>
+
+            <a  href="https://www.linkedin.com/in/cedmoss/">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/malikmoss/mcflicc-w17-project-react">
+                Repo
+            </a>
+        </footer>
+    </div>
   );
 }
 

@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import './ExplorePage.css'
 import {useSelector, useDispatch} from 'react-redux'
 import {getPhotos, getPhoto} from "../../store/photo";
-import {Redirect, useHistory} from 'react-router-dom';
+import { useHistory} from 'react-router-dom';
+import PhotoItem from './photo'
 
 function ExplorePage() {
     const dispatch = useDispatch()
     const user = useSelector(state => state.session.user)
     const photos = useSelector(state => state.photos ? Object.values(state.photos) : null)
+    
     useEffect(()=>{
         if(user) {dispatch(getPhotos(user.id))}
     }, [dispatch, user])
