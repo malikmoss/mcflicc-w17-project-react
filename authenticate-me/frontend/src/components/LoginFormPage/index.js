@@ -24,7 +24,14 @@ function LoginFormPage() {
             const data = await res.json();
             if (data && data.errors) setErrors(data.errors);
           });
-      }
+
+      };
+
+    const demoLogin = (e) => {
+        setCredential('Demo-lition');
+        setPassword('password');
+        return dispatch(sessionActions.login({ credential, password}))
+    };
 
     return (
       <div className="login-page">
@@ -66,8 +73,8 @@ function LoginFormPage() {
             </div>
             </div>
 
-            <button className="login-button" type="submit">Log In</button>
-            <button className="demo-user"  type="submit">Demo User</button>
+            <button className="login-button">Log In</button>
+            <button className="demo-user"  onClick={demoLogin}>Demo User</button>
         </form>
       </div>
     </div>
