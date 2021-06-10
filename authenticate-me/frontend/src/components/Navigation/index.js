@@ -30,7 +30,7 @@ function Navigation({ isLoaded }){
     <ul className="navbar">
       <li>
         <h2 className="nav-title">mcflicc</h2>
-        <NavLink exact to="/"><button className="home-button" type="submit">Home</button></NavLink>
+        <NavLink exact to="/explore"><button className="home-button" type="submit">Home</button></NavLink>
         {isLoaded && sessionLinks}
       </li>
     </ul>

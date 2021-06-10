@@ -20,7 +20,7 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    margin-top: -99px;
+    margin-top: -56px;
     z-index: 1;
 }
 
@@ -37,10 +37,18 @@
     margin-left: 45vw;
     margin-bottom: 50px; */
 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     width: 17%;
     height: 355px;
+    padding: 20px 24px 24px 20px;
+    background-color: white;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
     padding: 20px 24px 24px 20px;
     background-color: white;
     border-radius: 5px;
@@ -55,7 +63,7 @@
 }
 
 .email-container {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .email-label {
@@ -110,12 +118,12 @@
     background-color: lightgrey;
 } */
 
-.button-container {
+/* .button-container {
     background-color: tomato;
     border-radius: 0.25em;
-}
+} */
 
-button {
+/* button {
     margin: 10px;
     height: 40px;
     width: 275px;
@@ -124,7 +132,7 @@ button {
     border-radius: 0.25em;
     color: white;
     font-size: 18px;
-}
+} */
 
 .login-button {
     margin: 10px;
@@ -136,7 +144,8 @@ button {
     color: white;
     cursor: pointer;
     margin-top: 4px;
-    margin-bottom: 4px
+    margin-bottom: 4px;
+    align-items: center;
 }
 
 .demo-user {
@@ -149,5 +158,6 @@ button {
     color: white;
     cursor: pointer;
     margin-top: 4px;
-    margin-bottom: 4px
+    margin-bottom: 4px;
+    align-items: center;
 }

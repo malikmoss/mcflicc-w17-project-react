@@ -20,7 +20,7 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    margin-top: -99px;
+    margin-top: -56px;
     z-index: 1;
 }
 
@@ -36,10 +36,12 @@
     margin-top: 15vh;
     margin-bottom: 400px; */
 
-    display: flex;
+    /* display: flex; */
+    /* width: 17%; */
+    /* height: 355px; */
     flex-direction: column;
-    width: 17%;
-    height: 355px;
+    width: fit-content;
+    height: fit-content;
     padding: 20px 24px 24px 20px;
     background-color: white;
     border-radius: 5px;
@@ -146,10 +148,10 @@
     margin-top: 5px;
     margin-bottom: 10px;
 }
-.button-container {
+/* .button-container {
     background-color: tomato;
     border-radius: 0.25em;
-}
+} */
 
 button {
     margin: 10px;
