@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         photoURL: 'https://mcflicc-photos.s3.amazonaws.com/mcpiccs/oct+harbour_shenzhen_china/deceased1.JPEG',
-        authorId: 1,
+        authorId: 1
       },
       {
         photoURL: 'https://mcflicc-photos.s3.amazonaws.com/mcpiccs/nonactive.JPEG',
@@ -77,30 +77,20 @@ module.exports = {
       },
       {
         photoURL: 'https://mcflicc-photos.s3.amazonaws.com/singlearc.jfif',
-        authorId: 1,
+        authorId: 1
       },
       {
         photoURL: 'https://mcflicc-photos.s3.amazonaws.com/sydney_australia2.jfif',
-        authorId: 1,
+        authorId: 1
       },
       {
         photoURL: 'https://mcflicc-photos.s3.amazonaws.com/sydney_australia3.jfif',
         authorId: 1
-      }
-    ])
-    /*
-      Add altering commands here.
-      Return a promise to correctly handle asynchronicity.
+      },
+    ]);
+    },
 
-      Example:
-      return queryInterface.bulkInsert('People', [{
-        name: 'John Doe',
-        isBetaMember: false
-      }], {});
-    */
-  },
-
-  down: async (queryInterface, Sequelize) => {
+  down: (queryInterface, Sequelize) => {
     /*
       Add reverting commands here.
       Return a promise to correctly handle asynchronicity.
@@ -110,3 +100,4 @@ module.exports = {
     */
   }
 };
+
